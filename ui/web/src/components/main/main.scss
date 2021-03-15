@@ -1,0 +1,15 @@
+.column {
+   background-color: #F1F1F1;
+   height: 500px;
+   padding: 20px;
+   margin: 20px;
+   width: 90%;
+   float: right;
+ }
+
+.cards-grid{
+   display: grid;
+   grid-template-columns: 25fr 25fr 25fr 25fr;
+   margin: 5px;
+   padding: 10px;
+}
