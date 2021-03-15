@@ -5,12 +5,15 @@ import Typography from "@material-ui/core/Typography";
 import CardActions from "@material-ui/core/CardActions";
 import Button from "@material-ui/core/Button";
 import makeStyles from "@material-ui/core/styles/makeStyles";
+import List from "@material-ui/core/List";
+import './cards.scss';
 
 const useStyles = makeStyles({
     root: {
         maxWidth: 300,
         margin: 10,
-        height: 200
+        height: 200,
+        overflow: 'auto'
     },
     bullet: {
         display: 'inline-block',
@@ -18,6 +21,7 @@ const useStyles = makeStyles({
     },
     title: {
         fontSize: 15,
+        align: "center"
     },
     pos: {
         marginBottom: 12,
@@ -36,9 +40,18 @@ function Cards() {
                         Jobs
                     </Button>
                 </CardActions>
-                <Typography variant="h5" component="h2">
+                <List>
+                    <li>first</li>
+                    <li>first</li>
+                    <li>first</li>
+                    <li>first</li>
+                    <li>first</li>
+                    <li>first</li>
+                    <li>first</li>
+                    <li>first</li>
 
-                </Typography>
+                    <li>first</li>
+                </List>
             </CardContent>
         </Card>
     );
