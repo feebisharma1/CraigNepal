@@ -19,12 +19,19 @@ const useStyles = makeStyles({
     title: {
         fontSize: 15,
     },
+    body: {
+        fontSize: 10,
+    },
     pos: {
         marginBottom: 12,
     },
 });
 
-function Cards() {
+
+function Cards(props) {
+    console.log("HITest::", props.jobs);
+    let jobsList = props.jobs.map(job => <li>{job}</li>);
+    console.log("JOblsit", jobsList);
 
     const classes = useStyles();
 
@@ -32,12 +39,12 @@ function Cards() {
         <Card className={classes.root} variant="outlined">
             <CardContent>
                 <CardActions>
-                    <Button className={classes.title} color="textSecondary" gutterBottom>
+                    <Button className={classes.title}>
                         Jobs
                     </Button>
                 </CardActions>
-                <Typography variant="h5" component="h2">
-
+                <Typography variant="h5" component="h5" className={classes.body}>
+                    {jobsList}
                 </Typography>
             </CardContent>
         </Card>

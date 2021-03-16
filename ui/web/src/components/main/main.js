@@ -2,18 +2,14 @@ import React from "react";
 import './main.scss';
 import Card from "../cards/cards";
 
-function Main(){
+function Main(props){
+    console.log("props:", props.cardList);
     return (
         <div className="column">
             <div className="cards-grid">
-                <Card/>
-                <Card/>
-                <Card/>
-                <Card/>
-                <Card/>
-                <Card/>
-                <Card/>
-                <Card/>
+                <Card
+                    jobs={props.cardList}
+                />
             </div>
         </div>
     )
