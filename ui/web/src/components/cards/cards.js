@@ -36,7 +36,7 @@ function Cards(props) {
     const classes = useStyles();
 
     return (
-        <Card className={classes.root} variant="outlined">
+        <Card className={classes.root} variant="outlined" style={{ backgroundColor: '#FFFFFF', height: '30vh', width: '20vh' }}>
             <CardContent>
                 <CardActions>
                     <Button className={classes.title}>
